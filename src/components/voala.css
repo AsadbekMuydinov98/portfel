@@ -1,0 +1,146 @@
+.home-container{
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 40px;
+  margin-top: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home-container .logo{
+  position: inherit;
+  margin-top: -50px;
+  height: 520px;
+  width: 520px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  user-select: none;
+}
+.home-container .logo .main-img{
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  cursor: pointer;
+}
+.home-container .logo .main-img.active{
+  animation: spin 15s linear 1s infinite;
+} 
+
+@keyframes spin{
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+.home-container .logo .circle{
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: rgb(4, 4, 44);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s ease;
+  opacity: 0;
+}
+.home-container .logo .main-img.active .circle{
+  opacity: 1;
+}
+
+.home-container .logo .main-img.active .circle:nth-child(1){
+  background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png');
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  transform: translateY(-210%);
+}
+
+.home-container .logo .main-img.active .circle:nth-child(2){
+  background: url('https://pathfortune.com/wp-content/uploads/2022/05/Rlogical-Blog-Images-thumbnail-1.png');
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  transform: translate(150%, -150%);
+}
+
+.home-container .logo .main-img.active .circle:nth-child(3){
+  background: url('https://static-00.iconduck.com/assets.00/nestjs-icon-512x510-9nvpcyc3.png');
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  transform: translate(210%);
+}
+
+.home-container .logo .main-img.active .circle:nth-child(4){
+  background: url('../assets/img/nodejs.png');
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  transform: translate(150%, 150%);
+}
+
+.home-container .logo .main-img.active .circle:nth-child(5){
+  background: url('https://ajeetchaulagain.com/static/7cb4af597964b0911fe71cb2f8148d64/87351/express-js.png');
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center; 
+  position: absolute;
+  transform: translateY(210%);
+}
+.home-container .logo .main-img.active .circle:nth-child(6){
+  background: url('../assets/img/tailwindcsss.png');
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  transform: translate(-150%, 150%);
+}
+
+.home-container .logo .main-img.active .circle:nth-child(7){
+  background: url('https://www.pngall.com/wp-content/uploads/13/Mongodb-PNG-Image-HD.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  transform: translateX(-210%);
+}
+
+.home-container .logo .main-img.active .circle:nth-child(8){
+  background: url('https://freeiconshop.com/wp-content/uploads/edd/js-flat.png');
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  transform: translate(-150%, -150%);
+}
+
+.home-container img{
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  border: 3px solid rgb(108, 161, 197);
+  transform: translate(-200px);
+  opacity: 0;
+  animation: fade-in 3s ease .5s forwards;
+}
+
+@keyframes fade-in{
+  to{
+    transform: translate(0);
+    opacity: 1;
+  }
+}
