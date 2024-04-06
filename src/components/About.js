@@ -1,6 +1,6 @@
 import React from 'react'
 import asa from '../assets/img/asa.jpg'
-import cv from '../assets/cv.pdf'
+import cv from '../assets/AsadbekCV.pdf'
 
 const About = () => {
   return (

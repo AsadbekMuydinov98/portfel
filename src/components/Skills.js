@@ -30,14 +30,14 @@ export const Skills = () => {
                           <div className="bar">
                             <div className="info">
                               <span>ReactJs</span>
-                              <span>75%</span>
+                              <span>65%</span>
                             </div>
                             <div className="line react"></div>
                           </div>
                           <div className="bar">
                             <div className="info">
                               <span>Javascript</span>
-                              <span>75%</span>
+                              <span>60%</span>
                             </div>
                             <div className="line js"></div>
                           </div>
