@@ -408,6 +408,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }.skills .js::before{
 	width: 60%;
 	background-color: #E3A324;
+}.skills .ts::before{
+	width: 60%;
+	background-color: #0179CD;
 }.skills .express::before{
 	width: 50%;
 	background-color: #88c249;

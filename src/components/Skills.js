@@ -43,6 +43,13 @@ export const Skills = () => {
                           </div>
                           <div className="bar">
                             <div className="info">
+                              <span>Typescript</span>
+                              <span>60%</span>
+                            </div>
+                            <div className="line ts"></div>
+                          </div>
+                          <div className="bar">
+                            <div className="info">
                               <span>ExpressJs</span>
                               <span>50%</span>
                             </div>
