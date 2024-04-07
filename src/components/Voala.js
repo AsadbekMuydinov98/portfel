@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './voala.css'
+import me from  "../assets/img/me.png"
 
 const Voala = () => {
   const [isActive, setIsActive] = useState(true)
@@ -19,7 +20,7 @@ const Voala = () => {
           <span className="circle"></span>
           <span className="circle"></span>
         </div>
-        <img src="./me.jpg" alt="" />
+        <img src={me} alt="" />
       </div>
     </div>
   )
